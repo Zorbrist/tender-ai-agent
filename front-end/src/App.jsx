@@ -1,4 +1,5 @@
 import AgentCard from "./components/AgentCard"
+import Button from "./components/Button"
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       </header>
 
       {/* This is the magic wrapper that puts them in a row */}
-      {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <AgentCard 
           agentName="Compliance Officer" 
           role="legolnad" 
@@ -26,7 +27,10 @@ function App() {
           role="hello" 
           status="completed" 
         />
-      </div> */}
+      </div>
+      <div>
+        <Button/>
+      </div>
     </div>
   )
 }
