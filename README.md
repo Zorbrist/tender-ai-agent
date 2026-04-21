@@ -1,18 +1,167 @@
-# React + Vite
+# 🧠 Tender AI Agent
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web-based AI-powered system for analyzing and processing tender documents using intelligent agents.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Tech Stack
 
-## React Compiler
+* **Frontend:** React (Vite)
+* **Backend:** FastAPI (Python)
+* **Environment:** Virtual Environment (venv)
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 📁 Project Structure
 
-## Expanding the ESLint configuration
+```
+tender-ai-agent/
+│
+├── backend-stack/
+│   └── fastapi-backend/
+│       ├── main.py
+│       ├── venv/
+│       └── ...
+│
+├── front-end/
+│   ├── src/
+│   ├── package.json
+│   └── ...
+│
+└── .gitignore
+└── README.md
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+# ⚙️ Setup Instructions
+
+## 1. Clone the repository
+
+```bash
+git clone <your-repo-url>
+cd tender-ai-agent
+```
+
+---
+
+# 🐍 Backend Setup (FastAPI)
+
+## 2. Navigate to backend
+
+```bash
+cd backend-fastapi
+```
+
+---
+
+## 3. Create virtual environment
+
+```bash
+python -m venv venv
+```
+
+---
+
+## 4. Activate virtual environment
+
+### Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+### Mac/Linux:
+
+```bash
+source venv/bin/activate
+```
+
+---
+
+## 5. Install dependencies
+
+```bash
+pip install -r requirements.txt
+
+---
+
+## 6. Run backend server
+
+```bash
+uvicorn main:app --reload
+```
+
+Backend will run at:
+
+```
+http://localhost:8000
+```
+
+API Docs:
+
+```
+http://localhost:8000/docs
+```
+
+---
+
+# ⚛️ Frontend Setup (React + Vite)
+
+## 7. Open new terminal and go to frontend
+
+```bash
+cd front-end
+```
+
+---
+
+## 8. Install dependencies
+
+```bash
+npm install
+```
+
+---
+
+## 9. Run frontend
+
+```bash
+npm run dev
+```
+
+Frontend will run at:
+
+```
+http://localhost:5173
+```
+
+---
+
+# 🔄 Running Full Application
+
+1. Start backend (FastAPI)
+2. Start frontend (React)
+3. Open browser at `http://localhost:5173`
+
+---
+
+# 📌 Notes
+
+* Ensure backend is running before using frontend features
+* Update API URLs in frontend if needed
+* Use `.env` files for configuration in production
+
+---
+
+# 🛠️ Future Improvements
+
+* Add Docker support
+* Add authentication
+* Add database integration
+
+---
+
+# 👨‍💻 Author
+
+Tender AI Agent Project
