@@ -1,9 +1,12 @@
 import '../css/button.css'
 
-function Button() {
-    return (
-        <button className='btn'>Summarize</button>
-    );
+function Button({ label, onClick }) {
+  return (
+    <button className="btn" onClick={onClick}>
+      {label}
+    </button>
+  );
 }
+
 
 export default Button;
