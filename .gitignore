@@ -1,10 +1,20 @@
-# Python
+
+# Python environment
 venv/
 __pycache__/
 *.pyc
 
+# Environment variables (CRITICAL)
+.env
+
 # Node
 node_modules/
 
-# Environment
-.env
+# Data files (Tenders can be confidential)
+data/*.txt
+data/*.pdf
+data/
+
+# IDE settings
+.vscode/
+.idea/
